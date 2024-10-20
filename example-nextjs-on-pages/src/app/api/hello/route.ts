@@ -4,7 +4,7 @@ import { getRequestContext } from '@cloudflare/next-on-pages'
 export const runtime = 'edge'
 
 export async function GET(request: NextRequest) {
-  let responseText = 'Hello there World'
+  let responseText = 'Hello there World bye'
 
   // In the edge runtime you can use Bindings that are available in your application
   // (for more details see:
