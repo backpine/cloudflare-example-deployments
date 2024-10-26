@@ -18,7 +18,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@schema/*": ["./schemas/*"]
     },
     "types": [
         "@cloudflare/workers-types/2023-07-01"
