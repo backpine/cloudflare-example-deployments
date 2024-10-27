@@ -14,4 +14,5 @@ pages_build_output_dir = ".vercel/output/static"
 [[d1_databases]]
 binding = "DB"
 database_name = "my-db"
-database_id = "ca79fca5-a083-4a93-a82c-586bf9c00ca2"
+database_id = "<Database-ID>"
+migrations_dir = ".drizzle-out"

@@ -11,6 +11,9 @@
     "types": [
         "@cloudflare/workers-types/2023-07-01"
     ],
+    "paths": {
+      "@schema/*": ["./schemas/*"]
+    },
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx"
   },

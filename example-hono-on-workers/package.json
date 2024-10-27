@@ -1,15 +1,21 @@
 {
   "name": "example-hono-on-workers",
   "scripts": {
-    "dev": "wrangler dev",
+    "dev": "wrangler dev --remote",
     "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:migrate": "drizzle-kit migrate",
+    "drizzle:dev": "drizzle-kit studio"
   },
   "dependencies": {
+    "drizzle-kit": "^0.26.2",
+    "drizzle-orm": "^0.35.3",
     "hono": "^4.6.5"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241018.0",
+    "@types/node": "^22.8.1",
     "wrangler": "^3.79.0"
   }
 }
